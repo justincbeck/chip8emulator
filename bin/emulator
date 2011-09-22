@@ -1,0 +1,8 @@
+$LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
+
+require 'emulator'
+
+emulator = Emulator.new
+#emulator.run(File.read("data/chip8_test.chip8"))
+emulator.run(File.read("data/blinky.chip8"))
+emulator.dump
